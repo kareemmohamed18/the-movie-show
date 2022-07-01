@@ -1,0 +1,165 @@
+body
+{
+    background-color: #000000f2;
+    margin: 0;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#loading
+{
+    position: fixed;
+    inset: 0;
+    background-color:#000000fe;
+    z-index: 99999999999999;
+}
+
+.spinner {
+    
+    margin: 300px auto 0;
+    width: 100px;
+    text-align: center;
+    font-size:larger;
+  }
+  
+  .spinner > div {
+    width: 18px;
+    height: 18px;
+        background-color: #fff;
+  
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+  
+  .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  
+  .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  
+  @-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 40% { 
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+  }
+
+nav
+{
+    z-index: 9999999;
+
+}
+#openNav
+{
+    cursor: pointer;
+}
+
+.links 
+{
+    background-color: #000000f2;
+    color: #fff;
+
+}
+.links ul li
+{
+    list-style-type: none;
+    padding: 15px 0;
+    position: absolute;
+    top: 60%;
+    opacity: 0;
+}
+.links ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.links ul li a:hover
+{
+    color: #dc3545;
+}
+
+.layer
+{
+    position: absolute;
+    top: 100%;
+    background-color: hsla(0, 0%, 100%, 0.512);
+    height: 100%;
+    transition: 1s all;
+}
+.movie-details
+{   
+    overflow: hidden;
+}
+
+.movie-details:hover .layer
+{
+    top: 0 !important;
+
+}
+
+
+
+@media screen and (max-width:450px) 
+{
+    
+    .movie-details
+    {
+        width: 450px !important ;
+        padding-right: 40% !important;
+    }
+
+    .layer
+    {
+        width: 76% !important;
+        padding-right: 0px !important;
+    }
+
+
+
+    #submit 
+    {
+        width: 50% !important;
+        margin: auto;
+    }
+    .layer h3
+    {
+        font-size: 14px !important;
+    
+    }
+
+    .layer p 
+    {
+        font-size: 9px !important;
+        font-weight: bolder !important;
+    }
+
+    .close
+    {
+        width: 40px !important;        
+    }
+   
+    .layer
+    {
+        padding: 30px 0;
+    }
+    
+
+
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <title>  The Movie Show </title>
+    </head>
+    <body>
+
+        <div id="loading" >
+            <div class="spinner text-white">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+
+        <nav class=" bg-info  vh-100 position-fixed d-flex  ">
+
+            <section class="links  py-4 fw-light pe-5 d-flex flex-column justify-content-between"> 
+                <ul class=" me-5    " >
+                    <li><a id="nowPlaying" href="#">Now Playing</a></li>
+                    <li><a id="popular" href="#">Popular</a></li>
+                    <li><a id="topRated" href="#">Top Rated</a></li>
+                    <li><a id="trending" href="#">Trending</a></li>
+                    <li><a id="upcoming" href="#">Upcoming</a></li>
+                    <li><a href="#contact"> Contact Us</a> </li>
+                </ul>
+
+                <div class=" ps-4 pb-4  ">
+                    <i class="fa-brands fa-facebook-f px-2"></i>
+                    <i class="fa-brands fa-twitter px-2"></i>
+                    <i class="fa-solid fa-globe pb-3  px-2"></i>
+                    <p>Copyright Â© 2019 All <br> Rights Reserved. </p>
+    
+                </div>
+            </section>
+
+            <section class="close  bg-light d-flex align-items-center justify-content-between flex-column  py-4 fa-xl    ">
+
+                <img src="images/logo.png" class="w-50" alt="">
+
+
+                <i id="openNav" class="fa-solid fa-bars"></i>
+
+                <div class="icon  flex-column d-flex">
+                    <i class="fa-solid fa-globe pb-3"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </section>
+
+
+        </nav>
+
+                        <!-- movie search  -->
+
+        <div class="container px-5 pt-5 container-sm ">
+            <div  class="row  px-5 pt-5 ">
+
+                <div class="col-md-6 mb-3 ">
+                    <div class="search-movie   ">
+                        <input id="search" type="text" class="form-control text-light bg-transparent border-top-0 border-end-0 border-start-0 text-center" placeholder="get movies by word . . ." >
+                    </div>
+                </div> 
+
+                <div class="col-md-6 ">
+                    <div class="search-movie ">
+                        <input id="searchPage" type="text" class="form-control text-light bg-transparent border-top-0 border-end-0 border-start-0 text-center" placeholder="search" >
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container px-5 ">
+            <div id="displayCols" class="row  px-5 ">
+                <!-- movie display -->
+
+
+            </div>
+        </div>
+
+        <!-- contact info  -->
+        <div id="contact" class="form pb-5 ">
+
+            
+            <div class="container px-5">
+                <div class="row px-5">
+                    <div class="pt-4">
+                        <h2 class=" text-white py-5 text-capitalize fw-light">contact us...</h2>
+                    </div>
+
+                    <div class="col-md-6 pb-5">
+                        <div class="valid-input ">
+                            <input id="nameInput" type="text" class="form-control text-light bg-transparent border-top-0 border-end-0 border-start-0 text-center" placeholder="Enter Your Name" >
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-6 pb-5">
+                        <div class="valid-input ">  
+                            <input id="emailInput" type="text" class="form-control text-light bg-transparent border-top-0 border-end-0 border-start-0 text-center" placeholder="Enter Email" >
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="col-md-6 pb-5">
+                        <div class="valid-input ">
+                            <input id="phoneInput" type="text" class="form-control text-light bg-transparent border-top-0 border-end-0 border-start-0 text-center" placeholder="Enter Phone" >
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="col-md-6 pb-5">
+                        <div class="  valid-input ">
+                            <input id="ageInput" type="text" class="form-control text-light bg-transparent border-top-0 border-end-0 border-start-0 text-center" placeholder="Enter Age" >
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="col-md-6 pb-5">
+                        <div class="valid-input ">
+                            <input id="passwordInput" type="text" class="form-control text-light bg-transparent border-top-0 border-end-0 border-start-0 text-center" placeholder="Enter Password" >
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="col-md-6 pb-5">
+                        <div class="valid-input ">
+                            <input id="rePasswordInput" type="text" class="form-control text-light bg-transparent border-top-0 border-end-0 border-start-0 text-center" placeholder="Enter RePassword" >
+                        </div>
+                        
+                    </div>
+
+                    <button id="submit" disabled  class="  btn btn-outline-danger w-25 m-auto  "> Submit</button>
+
+
+
+    
+
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script type="module" src="js/project1.js"></script>
+    </body>
+
+</html>
