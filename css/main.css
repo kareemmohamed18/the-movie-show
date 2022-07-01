@@ -123,14 +123,14 @@ nav
     }
     .movie-details
     {
-        width: 200% !important ;
+        width: 220% !important ;
         padding-right: 40% !important;
     }
 
     
     .layer
     {
-        width: 80% !important;
+        width: 83% !important;
         padding-right: 0px !important;
     }
 
@@ -143,13 +143,13 @@ nav
     }
     .layer h3
     {
-        font-size: 14px !important;
+        font-size: 11px !important;
     
     }
 
     .layer p 
     {
-        font-size: 9px !important;
+        font-size: 7px !important;
         font-weight: bolder !important;
     }
 
