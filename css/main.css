@@ -1,7 +1,6 @@
 body
 {
     background-color: #000000f2;
-    margin: 0;
     overflow: hidden;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -116,18 +115,22 @@ nav
 
 
 
-@media screen and (max-width:450px) 
+@media screen and (max-width:320px) 
 {
-    
+    nav 
+    {
+        height: 100vh !important;
+    }
     .movie-details
     {
-        width: 450px !important ;
+        width: 200% !important ;
         padding-right: 40% !important;
     }
 
+    
     .layer
     {
-        width: 76% !important;
+        width: 80% !important;
         padding-right: 0px !important;
     }
 
@@ -152,7 +155,8 @@ nav
 
     .close
     {
-        width: 40px !important;        
+        padding: 10px 5px 10px 10px !important;
+        width: 40px !important;
     }
    
     .layer
