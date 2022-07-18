@@ -105,6 +105,7 @@ nav
 .movie-details
 {   
     overflow: hidden;
+
 }
 
 .movie-details:hover .layer
@@ -115,23 +116,23 @@ nav
 
 
 
-@media screen and (max-width:320px) 
+@media screen and (max-width:450px) 
 {
     nav 
     {
         height: 100vh !important;
     }
-    .movie-details
-    {
-        width: 220% !important ;
-        padding-right: 40% !important;
-    }
-
     
-    .layer
+
+    .row
     {
-        width: 83% !important;
-        padding-right: 0px !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    .container
+    {
+        padding: 0px !important;
+        padding-left: 40px !important;
     }
 
 
@@ -139,17 +140,17 @@ nav
     #submit 
     {
         width: 50% !important;
-        margin: auto;
+        margin: auto !important;
     }
     .layer h3
     {
-        font-size: 11px !important;
+        font-size: 15px !important;
     
     }
 
     .layer p 
     {
-        font-size: 7px !important;
+        font-size: 9px !important;
         font-weight: bolder !important;
     }
 
@@ -158,12 +159,36 @@ nav
         padding: 10px 5px 10px 10px !important;
         width: 40px !important;
     }
-   
     .layer
     {
         padding: 30px 0;
     }
-    
 
+
+}
+
+@media screen and (min-width:768px) and (max-width:1000px)
+{
+    .row
+    {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    .container
+    {
+        padding: 0px !important;
+        padding-left: 40px !important;
+    }
+    .layer h3
+    {
+        font-size: 15px !important;
+    
+    }
+
+    .layer p 
+    {
+        font-size: 9px !important;
+        font-weight: bolder !important;
+    }
 
 }
